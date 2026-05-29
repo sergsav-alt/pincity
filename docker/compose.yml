@@ -9,4 +9,4 @@ services:
       POSTGRES_PASSWORD: root
       POSTGRES_DB: telegram
     volumes:
-      - ./import/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./imports/init.sql:/docker-entrypoint-initdb.d/init.sql

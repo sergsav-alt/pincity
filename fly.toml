@@ -1,18 +1,23 @@
-# fly.toml app configuration file generated for pincity on 2023-09-20T06:18:15+06:00
+# fly.toml app configuration file generated for pincity-unfurling-marsh-5621 on 2026-05-29T15:36:20+03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "pincity"
-primary_region = "ams"
-swap_size_mb = 512
+app = 'pincity-unfurling-marsh-5621'
+primary_region = 'fra'
 
 [build]
 
 [http_service]
   internal_port = 8080
-#  force_https = true
-  auto_stop_machines = false
+  #force_https = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
-  processes = ["app"]
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+  memory_mb = 1024

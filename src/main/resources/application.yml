@@ -28,5 +28,5 @@ spring:
     database-change-log-lock-table: _databasechangeloglock
 
 bot:
-  name: "PinCityBot"
-  token: {$BOT_TOKEN:}
+  name: sergserg2bot
+  token: 8382560038:AAHi1wl8X90XfW-p21Qz7kjCLdh7yOcVDHU

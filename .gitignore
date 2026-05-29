@@ -58,3 +58,7 @@ build/
 .vscode/
 
 **.csv
+
+.DS_Store
+src/.DS_Store
+docker/.DS_Store

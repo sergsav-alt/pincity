@@ -1,18 +1,23 @@
-# fly.toml app configuration file generated for pincity on 2023-09-20T06:18:15+06:00
+# fly.toml app configuration file generated for pincity-aged-paper-4239 on 2026-05-29T14:30:55Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "pincity"
-primary_region = "ams"
+app = 'pincity-aged-paper-4239'
+primary_region = 'ams'
 swap_size_mb = 512
 
 [build]
 
 [http_service]
   internal_port = 8080
-#  force_https = true
-  auto_stop_machines = false
+  auto_stop_machines = 'off'
   auto_start_machines = true
   min_machines_running = 0
-  processes = ["app"]
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+  memory_mb = 256

@@ -4,7 +4,7 @@ spring:
   main:
     banner-mode: off
   datasource:
-    url: ${POSTGRES_JDBC_URL:jdbc:postgresql://citypins.internal:5432/telegram}
+    url: ${POSTGRES_JDBC_URL:jdbc:postgresql://citypins.internal:5432/pins}
     username: ${POSTGRES_USERNAME:postgres}
     password: ${POSTGRES_PASSWORD:uUBdjYdEgIbEALU}
     driver-class-name: org.postgresql.Driver
